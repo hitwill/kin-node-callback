@@ -1,0 +1,27 @@
+{
+  "name": "kin-node-server",
+  "version": "1.0.0",
+  "description": "An implementation of the Kin ecosystem SDK for Node.js (https://github.com/kinecosystem/kin-sdk-node)",
+  "main": "kinWrapper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hitwill/kin-node-server.git"
+  },
+  "keywords": [
+    "kin",
+    "node.js",
+    "node"
+  ],
+  "author": "Will Gikandi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hitwill/kin-node-server/issues"
+  },
+  "homepage": "https://github.com/hitwill/kin-node-server#readme",
+  "dependencies": {
+    "@kinecosystem/kin-sdk-node": "0.0.1"
+  }
+}
