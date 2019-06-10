@@ -71,6 +71,12 @@ artifacts/
 *.svclog
 *.scc
 
+# JS Config file for Visual Studio
+jsconfig.json
+
+# test file
+test.js
+
 # Chutzpah Test files
 _Chutzpah*
 

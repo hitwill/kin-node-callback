@@ -13,9 +13,10 @@
   "keywords": [
     "kin",
     "node.js",
-    "node"
+    "node",
+    "sdk"
   ],
-  "author": "Will Gikandi",
+  "author": "github.com/hitwill",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hitwill/kin-node-server/issues"
