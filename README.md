@@ -14,7 +14,7 @@ npm install @hitwill/kin-node-server
 Initialize once and use throughout your code
 ```javascript
     const isProduction = false;
-    const isProduction = 'your seed of an existing account';
+    const seed = 'your seed of an existing account';
     var KinWrapper = require('@hitwill/KinWrapper');
     var kin = new KinWrapper(seed, isProduction);
 ```
