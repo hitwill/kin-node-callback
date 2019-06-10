@@ -7,7 +7,7 @@ A callback implementation of the [Kin ecosystem SDK for Node.js](https://github.
 # Usage
 ## Installation
 ```
-npm install @hitwill/kin-node-server
+npm install kin-node-server
 ```
 
 ## Initializing
@@ -15,7 +15,7 @@ Initialize once and use throughout your code
 ```javascript
     const isProduction = false;
     const seed = 'your seed of an existing account';
-    var KinWrapper = require('@hitwill/KinWrapper');
+    var KinWrapper = require('KinWrapper');
     var kin = new KinWrapper(seed, isProduction);
 ```
 
