@@ -19,7 +19,7 @@ Initialize once and use throughout your code
     var kin = new KinWrapper(seed, isProduction);
 ```
 
-### Calling functions
+# Calling functions
 ## Synchronous functions
 Just call synchronous functions defined in the [SDK](https://github.com/kinecosystem/kin-sdk-node) as follows:
 ```javascript
