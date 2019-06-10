@@ -4,13 +4,13 @@ A callback implementation of the [Kin ecosystem SDK for Node.js](https://github.
 
 **Note:**, this will only work with pre-created accounts (you provide the private key of an on-boarded account)
 
-## Usage
-### Installation
+# Usage
+## Installation
 ```
 npm install @hitwill/kin-node-server
 ```
 
-### Initializing
+## Initializing
 Initialize once and use throughout your code
 ```javascript
     const isProduction = false;
