@@ -47,11 +47,11 @@ etc
 ## Asynchronous functions
 Check if an account exists
 ```javascript
-    kin.isAccountExisting(address, (err, exists) => {
-        if (!err) {
-            console.log(exists);
-        }
-    });
+kin.isAccountExisting(address, (err, exists) => {
+    if (!err) {
+        console.log(exists);
+    }
+});
 ```
 
 Get the minimum fee per transaction
