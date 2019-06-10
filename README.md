@@ -1,4 +1,4 @@
-# kin-node-callbacks
+# kin-node-callback
 A callback implementation of the [Kin ecosystem SDK for Node.js](https://github.com/kinecosystem/kin-sdk-node)
 
 
@@ -7,7 +7,7 @@ A callback implementation of the [Kin ecosystem SDK for Node.js](https://github.
 # Usage
 ## Installation
 ```
-npm install kin-node-callbacks
+npm install kin-node-callback
 ```
 
 ## Initializing
@@ -15,7 +15,7 @@ Initialize once and use throughout your code
 ```javascript
 const isProduction = false;
 const seed = 'SD5A7NFIWBZFMVNH73IORNWEGLEL6FTEHQD6N2HDJEM6RC5UZCIH7YK6';
-var KinWrapper = require('kin-node-callbacks');
+var KinWrapper = require('kin-node-callback');
 var kin = new KinWrapper(seed, isProduction);
 
 console.log(kin.account.publicAddress);
