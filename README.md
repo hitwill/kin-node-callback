@@ -15,13 +15,20 @@ Initialize once and use throughout your code
 ```javascript
     const isProduction = false;
     const isProduction = 'your seed of an existing account';
-    var KinWrapper = require('./KinWrapper');
+    var KinWrapper = require('@hitwill/KinWrapper');
     var kin = new KinWrapper(seed, isProduction);
 ```
 
 ### Calling functions
 ## Synchronous functions
 Just call synchronous functions defined in the [SDK](https://github.com/kinecosystem/kin-sdk-node) as follows:
+```javascript
+const address = kin.account.publicAddress;
+```
+
+Or
+
+
 ```javascript
 const whitelistedTransaction = kin.account.whitelistTransaction(clientTransaction);
 ```
@@ -31,6 +38,8 @@ Or
 ```javascript
 const decodedTransaction = kin.client.decodeTransaction(encodedTransaction);
 ```
+
+etc
 
 
 ## Asynchronous functions
