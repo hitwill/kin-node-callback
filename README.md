@@ -15,7 +15,7 @@ Initialize once and use throughout your code
 ```javascript
     const isProduction = false;
     const isProduction = 'your seed of an existing account';
-    var KinWrapper = require();
+    var KinWrapper = require('./KinWrapper');
     var kin = new KinWrapper(seed, isProduction);
 ```
 
