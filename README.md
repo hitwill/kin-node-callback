@@ -14,7 +14,7 @@ npm install kin-node-callbacks
 Initialize once and use throughout your code
 ```javascript
 const isProduction = false;
-const seed = 'your seed of an existing account';
+const seed = 'SD5A7NFIWBZFMVNH73IORNWEGLEL6FTEHQD6N2HDJEM6RC5UZCIH7YK6';
 var KinWrapper = require('kin-node-callbacks');
 var kin = new KinWrapper(seed, isProduction);
 
