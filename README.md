@@ -1,4 +1,4 @@
-# kin-node-server
+# kin-node-callbacks
 A callback implementation of the [Kin ecosystem SDK for Node.js](https://github.com/kinecosystem/kin-sdk-node)
 
 
