@@ -15,8 +15,10 @@ Initialize once and use throughout your code
 ```javascript
     const isProduction = false;
     const seed = 'your seed of an existing account';
-    var KinWrapper = require('KinWrapper');
+    var KinWrapper = require('kin-node-callbacks');
     var kin = new KinWrapper(seed, isProduction);
+
+    console.log(kin.account.publicAddress);
 ```
 
 # Calling functions
