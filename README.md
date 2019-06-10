@@ -7,7 +7,7 @@ A callback implementation of the [Kin ecosystem SDK for Node.js](https://github.
 # Usage
 ## Installation
 ```
-npm install kin-node-server
+npm install kin-node-callbacks
 ```
 
 ## Initializing
