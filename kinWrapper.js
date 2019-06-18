@@ -60,6 +60,8 @@ KinWrapper.prototype.sendKin = function (destination, amount, memoText, callBack
         }).catch((err) => {
             callBack(err);
         });
+    }).catch((err) => {
+        callBack(err);
     });
 };
 
@@ -194,6 +196,8 @@ KinWrapper.prototype.createAccount = function (address, startingBalance, memoTex
         }).catch((err) => {
             callBack(err);
         });
+    }).catch((err) => {
+        callBack(err);
     });
 };
 
