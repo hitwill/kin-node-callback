@@ -1,6 +1,6 @@
 {
   "name": "kin-node-callback",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An implementation of the Kin ecosystem SDK for Node.js (https://github.com/kinecosystem/kin-sdk-node)",
   "main": "kinWrapper.js",
   "scripts": {
