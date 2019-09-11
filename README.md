@@ -18,7 +18,7 @@ npm install kin-node-callback
 Initialize once and use throughout your code
 ```javascript
 const isProduction = false;
-const appID = 'appID';
+const appID = 'test'; //4 character alphanumeric
 const KinWrapper = require('./KinWrapper');
 
 //NOTE: store your seed in an environment variable! Below is just an example
