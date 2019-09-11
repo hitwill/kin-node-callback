@@ -2,7 +2,11 @@
 A callback implementation of the [Kin ecosystem SDK for Node.js](https://github.com/kinecosystem/kin-sdk-node)
 
 
-**Note:**, this will only work with pre-created accounts (you provide the private key of an on-boarded account)
+**Note 1:** - this will only work with pre-created accounts (you provide the private key of an on-boarded account).
+
+**Note 2:** - this uses [channels](https://docs.kin.org/nodejs/sdk#channels) to increase performance, so  you need to make sure that only a single instance of a KinAccount is initialized with multiple channel accounts.
+
+**Note 3:** - You can find a fully implemented version of this code [here](https://github.com/hitwill/kin-nodejs-server) with instructions of how to implement it yourself on [heroku](https://heroku.com).
 
 # Usage
 ## Installation
@@ -14,11 +18,22 @@ npm install kin-node-callback
 Initialize once and use throughout your code
 ```javascript
 const isProduction = false;
-const seed = 'SD5A7NFIWBZFMVNH73IORNWEGLEL6FTEHQD6N2HDJEM6RC5UZCIH7YK6';
-var KinWrapper = require('kin-node-callback');
-var kin = new KinWrapper(seed, isProduction);
+const appID = 'appID';
+const KinWrapper = require('./KinWrapper');
 
+//NOTE: store your seed in an environment variable! Below is just an example
+const seed = 'SD5A7NFIWBZFMVNH73IORNWEGLEL6FTEHQD6N2HDJEM6RC5UZCIH7YK6';
+const salt = 'SAQDKPXW2XC5SCNEADTEH2PHYHP74RWTCJ4MOK573RZINXI5HYIU4XK3';
+
+
+var kin = new KinWrapper(seed, salt,isProduction,appID);
 console.log(kin.account.publicAddress);
+
+kin.sendKin('GC7LPGWEPTC47ENOCWC6B57FT6M6MBHK2ZAKWSAUISQFAEETMSWSUNNI', 10, 'test send', callback);
+
+function callback(err, data) {
+    console.log(data);
+}
 ```
 
 # Calling functions
