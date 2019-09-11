@@ -41,7 +41,6 @@ function KinWrapper(seed, salt, production, appId) {
     this.account = this.getAccount(seed, this.client, appId);
     this.channels = Channels;
     this.fee = 100; //todo: fetch this dynamically
-    var self = this; //bit of a hack here
 }
 
 
@@ -64,7 +63,7 @@ KinWrapper.prototype.CreateChannels = function (callBack) {
     }).then(() => {
         callBack(null, true);
     }).catch(err => {
-        console.log(err);
+        callBack(err);
     });
 };
 
