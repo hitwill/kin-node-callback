@@ -36,6 +36,15 @@ function callback(err, data) {
 }
 ```
 
+## First use
+Before calling any functions, you will need to create and fund channels once. This creates 100 channels on Kin's blockchain that the wrapper will use. After this one time creation, you can comment out the code. Create the channels as follows:
+
+```javascript
+kin.CreateChannels(callback);
+
+```
+
+
 # Calling functions
 ## Synchronous functions
 Just call synchronous functions defined in the [SDK](https://github.com/kinecosystem/kin-sdk-node) as follows:
