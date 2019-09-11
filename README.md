@@ -1,5 +1,5 @@
 # kin-node-callback
-A callback implementation of the [Kin ecosystem SDK for Node.js](https://github.com/kinecosystem/kin-sdk-node)
+Wrapper with callbacks for the [Kin ecosystem SDK for Node.js](https://github.com/kinecosystem/kin-sdk-node)
 
 
 **Note 1:** - this will only work with pre-created accounts (you provide the private key of an on-boarded account).
