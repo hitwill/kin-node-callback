@@ -54,7 +54,7 @@ KinWrapper.prototype.CreateChannels = function (callBack) {
     
     if (!isFunction(callBack)) callBack = function () { };
 
-    let channelKeypairs = this.channels.createChannels({
+    this.channels.createChannels({
         environment: this.environment,
         baseSeed: this.seed,
         salt: this.salt,
@@ -145,6 +145,7 @@ KinWrapper.prototype.getAccountBalance = function (address, callBack) {
 };
 
 
+
 KinWrapper.prototype.getMinimumFee = function (callBack) {
     /**
     *Return the minimum fee
@@ -158,6 +159,7 @@ KinWrapper.prototype.getMinimumFee = function (callBack) {
             callBack(err);
         });
 };
+
 
 
 KinWrapper.prototype.isAccountExisting = function (address, callBack) {
@@ -175,6 +177,7 @@ KinWrapper.prototype.isAccountExisting = function (address, callBack) {
             callBack(err);
         });
 };
+
 
 KinWrapper.prototype.sendKin = function (destination, amount, memoText, callBack) {
     /**
@@ -244,7 +247,14 @@ KinWrapper.prototype.createAccount = function (address, startingBalance, memoTex
     });
 };
 
+
 KinWrapper.prototype.getAccount = function (seed, client, appId) {
+    /**
+    * Create an account on the blockchain
+    * @param {String} seed - seed/ private key
+    * @param {Object} client - kin client
+    * @param {String} appId - appId
+    */
     let account = client.createKinAccount({
         seed: seed,
         appId: appId,
@@ -254,14 +264,14 @@ KinWrapper.prototype.getAccount = function (seed, client, appId) {
         })
     });
     return (account);
-}
+};
+
 
 KinWrapper.prototype.getChannelKeyPairs = function () {
     /**
      * Return channel key/pairs
     *Regenerage created channels for use
     *generateSeeds function to re-generate the channel keypairs as long as the seed and salt are the same.
-    *@param {Function} callback (err, channels)
     */
 
     const generatedChannelKeypairs = Channels.generateSeeds({
